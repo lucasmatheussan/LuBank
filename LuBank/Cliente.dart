@@ -7,7 +7,7 @@ class Cliente extends Usuario{
     double _Salario;
     double _TotalGasto;
 
-    Cliente(this._TipoDeConta, this._LimiteCredito, this._Salario);
+    Cliente (var Nome, var DataNascimento, var Nivel, var cpf, var Senha ,this._TipoDeConta, this._LimiteCredito, this._Salario) : super (cpf, DataNascimento, Nivel, Nome, Senha);
 
     void set TipoConta(var TipoConta){
         this._TipoDeConta = TipoConta;
@@ -16,8 +16,15 @@ class Cliente extends Usuario{
        return this._TipoDeConta;
     }
 
-    double get LimiteCredito{
+    double  AumentarLimiteCredito(){
         this._LimiteCredito = (this._Salario * _TotalGasto)/12;
+        if(this._TipoDeConta == "Gold"){
+          this._LimiteCredito = (this._LimiteCredito * 0.10); 
+        }
+        return this._LimiteCredito;
+    }
+
+    double get LimiteCredito{
         return this._LimiteCredito;
     }
 
@@ -32,7 +39,7 @@ class Cliente extends Usuario{
       return this._TotalGasto;
     }
 
-    void set TsotalGasto(double Transacao){
+    void set TotalGasto(double Transacao){
       if(Transacao == 0){
         this._TotalGasto = 0;
       }else{

@@ -6,6 +6,8 @@ class Usuario{
     var _cpf;
     var _Senha;
 
+    Usuario(this._cpf, this._DataNascimento, this._Nivel, this._Nome, this._Senha);
+    
     void set Nome(var Nome){
       this._Nome = Nome;
     }
