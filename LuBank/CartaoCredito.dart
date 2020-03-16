@@ -8,6 +8,7 @@ class CartaoCredito{
 
   CartaoCredito(this._Cliente){
      this._LimiteDisponivel = _Cliente.LimiteCredito;
+     this._FaturaAtual =0;
   }
 
   double get LimiteDisponivel => _LimiteDisponivel;
@@ -18,6 +19,7 @@ class CartaoCredito{
       if(this._LimiteDisponivel >= valor){
           this._LimiteDisponivel -= valor;
           this._FaturaAtual += valor;
+          this._Cliente.sTotalGasto(valor);
           return true;
       }else{
           return false;

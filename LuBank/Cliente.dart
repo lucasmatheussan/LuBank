@@ -39,8 +39,8 @@ class Cliente extends Usuario{
       return this._TotalGasto;
     }
 
-    void set TotalGasto(double Transacao){
-      if(Transacao == 0){
+    void  sTotalGasto(double Transacao){
+      if(Transacao == 0 || this.TotalGasto == null){
         this._TotalGasto = 0;
       }else{
         this._TotalGasto += Transacao;
