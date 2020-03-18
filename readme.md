@@ -3,6 +3,6 @@ Aplicativo LuBank, o seu banco 100% digital.
 
 ## Atividades a serem realizadas
 
-    [ ] Criar classe Cartão de Crédito e Métodos.
-    [ ] Criar classe Conta Digital.
-    [ ] Configurar classe OperacaoBancarias.
+    [X] Criar classe Cartão de Crédito e Métodos.
+    [X] Criar classe Conta Digital.
+    [X] Configurar classe OperacaoBancarias.

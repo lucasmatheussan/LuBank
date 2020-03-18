@@ -7,4 +7,5 @@ main(){
   OperacaoBancarias ope1 = new OperacaoBancarias(cliente1);
   print(ope1.ObterCartaoCredito());
   print(ope1.ObterContaBancaria("30827-7"));
+  print(ope1)
 }
