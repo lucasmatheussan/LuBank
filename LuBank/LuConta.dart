@@ -5,6 +5,7 @@ class LuConta{
   var _Conta;
   double _Saldo;
   double _Devedor;
+  static final String _Agencia = "08702";
 
   LuConta(this._Cliente,this._Conta){
     this._Saldo =0;

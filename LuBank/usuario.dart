@@ -1,4 +1,4 @@
-class Usuario{
+abstract class Usuario{
 
     var _Nome;
     var _DataNascimento;
